@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a0da716-5a81-4966-af81-eaa6e79b33e9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppinsextrabold/poppins-extrabold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppinsextrabold/poppins-extrabold-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppinsextrabold/poppins-extrabold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppinsextrabold/poppins-extrabold-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppinsregular/poppins-regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppinsregular/poppins-regular-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppinsregular/poppins-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppinsregular/poppins-regular-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/background-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/hide.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/question-mark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/show.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InputEmail.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InputPassword.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SignInForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SignUpForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WelcomeFormWrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/AutnContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/UseValidation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/Context.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/Field.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/FormTypes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/IInputEmailProps.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/IInputPasswordProps.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/ValidationTypes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RVS2qdIkQWWga9yuR6QnwQHDIS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/alipinskaya/projects/auth-form/src/assets/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/alipinskaya/projects/auth-form/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
+      <recent name="$PROJECT_DIR$/src/types" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/assets/fonts/poppinsextrabold" />
+      <recent name="$PROJECT_DIR$/src/assets/fonts/poppinsregular" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a0da716-5a81-4966-af81-eaa6e79b33e9" name="Changes" comment="" />
+      <created>1687333550430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687333550430</updated>
+      <workItem from="1687333551604" duration="44883000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/context/AutnContext.tsx</url>
+          <line>5</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
