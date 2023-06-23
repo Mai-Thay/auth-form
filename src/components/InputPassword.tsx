@@ -13,8 +13,11 @@ const InputPassword: React.FC<IInputPasswordProps> =
      label = 'User password',
      placeholder = 'Password',
      isConfirmField = false,
-     password = ''
+     password = '',
+     showErrors = false,
+     pref = 'signin'
    }): React.ReactElement => {
+    const [visibleErrors, setVisibleErrors] = useState<boolean>(showErrors)
     const [isEqual, setIsEqual] = useState<boolean>(true);
     const [isVisible, setIsVisible] = useState<boolean>(false);
     const {
@@ -24,43 +27,59 @@ const InputPassword: React.FC<IInputPasswordProps> =
     } = useValidation(value, [ValidationTypesEnum.REQUIRED, ValidationTypesEnum.PASSWORD]);
 
     useEffect(() => {
-      if(isConfirmField) {
-        setIsEqual(value.length ? value === password: true);
+      if (isConfirmField) {
+        setIsEqual(value.length ? value === password : true);
       }
     }, [value, password])
 
-    const validatePassword = () => {
-      onChange({isValid: validate()})
+    useEffect(() => {
+      if(!isConfirmField) {
+        validate()
+      } else {
+        value && checkPasswordsEqual(value)
+      }
+      setVisibleErrors(showErrors)
+    }, [showErrors])
+
+    const validatePassword = (value: string) => {
+      setVisibleErrors(false)
+      validate()
+      onChange({value, isValid: validate()})
     }
 
-    const checkPasswordsEqual = () => {
+    const checkPasswordsEqual = (value: string) => {
       setIsEqual(password === value)
-      onChange({isValid: password === value})
+      setVisibleErrors(false)
+      onChange({value, isValid: password === value})
     }
 
     return (
       <div className={classNames({'form--row': true})}>
-        <div className={classNames({invalid: isConfirmField ? !isEqual : !isValid})}>
-        <label htmlFor={isConfirmField ? 'confirm' : 'password'}>{label}: </label>
+        <div className={classNames({invalid: visibleErrors && (isConfirmField ? !isEqual : !isValid)})}>
+          <label htmlFor={isConfirmField ? `${pref}-confirm` : `${pref}-password`}>{label}: </label>
           <input
-            id={isConfirmField ? 'confirm' : 'password'}
+            id={isConfirmField ? `${pref}-confirm` : `${pref}-password`}
             name="username"
             type={isVisible ? "text" : "password"}
             value={value}
             placeholder={placeholder}
-            onBlur={() => !isConfirmField ? validatePassword(): checkPasswordsEqual()}
-            onChange={(event: React.FormEvent<HTMLInputElement>) => onChange({value: event.currentTarget.value})}
+            onBlur={() => setVisibleErrors(true)}
+            onChange={(event: React.FormEvent<HTMLInputElement>) => {
+              !isConfirmField ?
+                validatePassword(event.currentTarget.value) :
+                checkPasswordsEqual(event.currentTarget.value)
+            }}
           />
           <div className="password-show" onClick={() => setIsVisible((value: boolean) => !value)}>
             {isVisible && <img src={hide}/>}
             {!isVisible && <img src={show}/>}
           </div>
         </div>
-        {!isValid && !isConfirmField && <div className="errors">
-            {errors[0]}
+        {visibleErrors && !isValid && !isConfirmField && <div className="errors">
+          {errors[0]}
         </div>}
-        {isConfirmField && !isEqual && <div className="errors">
-          Passwords are not equal.
+        {visibleErrors && isConfirmField && !isEqual && <div className="errors">
+            Passwords are not equal.
         </div>}
       </div>
     )

@@ -8,10 +8,6 @@ const useValidation = (
   const [isValid, setIsValid] = useState(true)
   const [errors, setErrors] = useState<Array<string>>([])
 
-  useEffect(() => {
-    setIsValid(true);
-  }, [value])
-
   const validate = () => {
     let valid = true;
     const errorsBag = [];
@@ -55,7 +51,7 @@ const useValidation = (
   }
 
   const checkPassword = (): boolean => {
-    return Boolean(value.match(/[a-zA-Z]/g)) && Boolean(value.match(/[0-1]/g));
+    return Boolean(value.match(/[a-zA-Z]/g)) && Boolean(value.match(/[0-9]/g));
   }
 
   return {isValid, validate, errors}

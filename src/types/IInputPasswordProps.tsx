@@ -5,4 +5,6 @@ export default interface IInputPasswordProps {
   placeholder?: string
   isConfirmField?: boolean
   password?: string
+  showErrors?: boolean
+  pref?: string
 }

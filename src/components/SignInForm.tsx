@@ -3,11 +3,11 @@ import anchor from '../assets/images/question-mark.svg';
 import InputEmail from "./InputEmail";
 import InputPassword from "./InputPassword";
 import { Field } from "../types/Field";
-import classNames from "classnames";
 import { useAuth } from "../context/AutnContext";
 import { Tooltip } from "react-tooltip";
 
 const SignInForm: React.FC = (): ReactElement => {
+  const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false)
   const [userError, setUserError] = useState<boolean>(false)
   const [email, changeEmail] = useState<Field>({
     value: '',
@@ -29,6 +29,8 @@ const SignInForm: React.FC = (): ReactElement => {
     event.preventDefault();
     if (password?.isValid && email?.isValid) {
       login(email.value, password.value).then((res) => setUserError(!res))
+    } else {
+      setIsFormSubmitted(true)
     }
   }
 
@@ -41,6 +43,7 @@ const SignInForm: React.FC = (): ReactElement => {
         </a>
       </div>
       <InputEmail
+        showErrors={isFormSubmitted}
         value={email.value ?? ''}
         onChange={(value: Field) => {
           changeEmail((prevState: Field) => ({...prevState, ...value}))
@@ -48,6 +51,7 @@ const SignInForm: React.FC = (): ReactElement => {
       />
       <InputPassword
         value={password.value ?? ''}
+        showErrors={isFormSubmitted}
         onChange={(value: Field) => {
           changePassword((prevState: Field) => ({...prevState, ...value}))
         }}
@@ -57,9 +61,7 @@ const SignInForm: React.FC = (): ReactElement => {
           Wrong user email or password. Please, try again.
         </div>
       </div>}
-      <button className={classNames({'form--submit': true, disabled: !password?.isValid || !email?.isValid})}>Sign
-        In
-      </button>
+      <button className="form--submit">Sign In</button>
       <div className="form--restore">Forgot <a>password</a>?</div>
       <Tooltip
         className="custom-colored-tooltip"

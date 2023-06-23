@@ -33,14 +33,6 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 
-  &.disabled {
-    cursor: auto;
-    background-color: $disabled;
-    &:hover {
-      background-color: $disabled;
-    }
-  }
-
   &:hover {
     background-color: $grey2;
   }

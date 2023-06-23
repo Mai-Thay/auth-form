@@ -3,4 +3,6 @@ export default interface IInputEmailProps {
   onChange: Function
   label?: string
   placeholder?: string
+  showErrors?: boolean
+  pref?: string
 }
