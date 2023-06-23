@@ -24,7 +24,7 @@ const InputPassword: React.FC<IInputPasswordProps> =
       isValid,
       validate,
       errors
-    } = useValidation(value, [ValidationTypesEnum.REQUIRED, ValidationTypesEnum.PASSWORD]);
+    } = useValidation( [ValidationTypesEnum.REQUIRED, ValidationTypesEnum.PASSWORD]);
 
     useEffect(() => {
       if (isConfirmField) {
@@ -34,7 +34,7 @@ const InputPassword: React.FC<IInputPasswordProps> =
 
     useEffect(() => {
       if(!isConfirmField) {
-        validate()
+        validate(value)
       } else {
         value && checkPasswordsEqual(value)
       }
@@ -43,8 +43,7 @@ const InputPassword: React.FC<IInputPasswordProps> =
 
     const validatePassword = (value: string) => {
       setVisibleErrors(false)
-      validate()
-      onChange({value, isValid: validate()})
+      onChange({value, isValid: validate(value)})
     }
 
     const checkPasswordsEqual = (value: string) => {

@@ -13,23 +13,18 @@ const InputEmail: React.FC<IInputEmailProps> =
      showErrors = false,
      pref = 'signin'
    }): React.ReactElement => {
-    const {isValid, validate, errors} = useValidation(value, [ValidationTypesEnum.REQUIRED, ValidationTypesEnum.EMAIL])
+    const {isValid, validate, errors} = useValidation( [ValidationTypesEnum.REQUIRED, ValidationTypesEnum.EMAIL])
     const [visibleErrors, setVisibleErrors] = useState<boolean>(showErrors)
 
     useEffect(() => {
-      validate()
+      validate(value)
       setVisibleErrors(showErrors)
     }, [showErrors])
 
     const validateEmail = (value: string) => {
       setVisibleErrors(false)
-      validate()
-      onChange({
-        value,
-        isValid: validate()
-      })
+      onChange({value, isValid: validate(value)})
     }
-
 
     return (
       <div className={classNames({'form--row': true})}>

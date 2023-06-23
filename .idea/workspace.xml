@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a0da716-5a81-4966-af81-eaa6e79b33e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icon192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icon512.png" afterDir="false" />
+    <list default="true" id="6a0da716-5a81-4966-af81-eaa6e79b33e9" name="Changes" comment="fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InputEmail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputEmail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InputPassword.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputPassword.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignInForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignInForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignUpForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUpForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/UseValidation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/UseValidation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/IInputEmailProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/IInputEmailProps.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/IInputPasswordProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/IInputPasswordProps.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,12 +66,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687333550430</updated>
-      <workItem from="1687333551604" duration="52470000" />
+      <workItem from="1687333551604" duration="53366000" />
     </task>
+    <task id="LOCAL-00001" summary="fixes">
+      <created>1687489436738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687489436739</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
